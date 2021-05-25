@@ -14,7 +14,9 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         //
-        AuthenticateException::class
+        AuthenticateException::class,
+        JsonAuthorizationException::class,
+        JsonValidationException::class
     ];
 
     /**
